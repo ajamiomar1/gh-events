@@ -46,7 +46,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist-files
-      - name : Output contents
+      - name: Output contents
         run: ls
         - name: Output filename
           eun: echo "${{ needs.build.outputs.script-f }}"
