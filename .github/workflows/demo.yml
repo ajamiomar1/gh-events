@@ -49,6 +49,6 @@ jobs:
       - name: Output contents
         run: ls
         - name: Output filename
-          eun: echo "${{ needs.build.outputs.script-f }}"
+          run: echo "${{ needs.build.outputs.script-f }}"
       - name: Deploy
         run: echo "Deploying..."
